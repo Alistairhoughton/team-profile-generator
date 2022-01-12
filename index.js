@@ -60,7 +60,7 @@ function master() {
         if (data.addEmployee === "Engineer") {
           createEngineer();
         } else if (data.addEmployee === "Intern") {
-          createInterface();
+          createIntern();
         } else {
           renderHtml();
         }
