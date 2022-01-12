@@ -92,7 +92,7 @@ function master() {
         {
           type: "input",
           name: "name",
-          message: "enter Engineer name",
+          message: "enter intern name",
         },
         {
           type: "input",
@@ -111,7 +111,7 @@ function master() {
         },
       ])
       .then((data) => {
-        const internData = new Engineer(
+        const internData = new Intern(
           data.name,
           data.id,
           data.email,

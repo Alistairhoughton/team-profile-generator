@@ -1,3 +1,4 @@
+const internal = require("stream");
 const Engineer = require("../lib/Engineer");
 
 const masterTeam = (profiles) => {
@@ -8,35 +9,62 @@ const masterTeam = (profiles) => {
         return`
         <div>
 
-        ${manager.getName}
-        ${manager.getId}
-        ${manager.getEmail}
-        ${manager.getOfficeNumber}
+        ${manager.name}
+        ${manager.id}
+        ${manager.email}
+        ${manager.officeNumber}
         
        
         <div>
-        <div>
-
-        ${Engineer.name}
-        
-
-
-        <div>
-        <div>
-
-        ${Engineer.name}
-        
-
-
-        <div>
-        
-        `;
+         `;
     }
+
+    const createEngineer = (engineer) => {
+        return`
+        <div>
+
+        ${engineer.name}
+        ${engineer.id}
+        ${engineer.email}
+        ${engineer.github}
+        
+       
+        <div>
+         `;
+    }
+
+    const createIntern = (intern) => {
+        return`
+        <div>
+
+        ${intern.name}
+        ${intern.id}
+        ${intern.email}
+        ${intern.school}
+        
+       
+        <div>
+         `;
+    }
+    
+    
 
     teamCards.push(
         profiles
         .filter((employee) => employee.getRole() === 'Manager')
-        .map((manager) => createManager(manager) )
+        .map((manager) => createManager(manager))
+    )
+
+    teamCards.push(
+        profiles
+        .filter((employee) => employee.getRole() === 'Engineer')
+        .map((engineer) => createEngineer(engineer))
+    )
+
+    teamCards.push(
+        profiles
+        .filter((employee) => employee.getRole() === 'Intern')
+        .map((intern) => createIntern(intern))
     )
     
 
