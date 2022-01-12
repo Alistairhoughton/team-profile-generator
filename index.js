@@ -43,8 +43,91 @@ function master() {
           data.officeNumber
         );
         employeeArr.push(managerData);
+        console.log(employeeArr);
+        addEmployee()
+      });
+    };
+    
+  
+  const createEngineer = () => {
+    inquirer
+      .prompt([
+        {
+          type: "input",
+          name: "name",
+          message: "enter Engineer name",
+        },
+        {
+          type: "input",
+          name: "id",
+          message: "Enter ID number",
+        },
+        {
+          type: "input",
+          name: "email",
+          message: "enter email address",
+        },
+        {
+          type: "input",
+          name: "github",
+          message: "enter github name",
+        },
+      ])
+      .then((data) => {
+        const engineerData = new Engineer(
+          data.name,
+          data.id,
+          data.email,
+          data.github
+        );
+        employeeArr.push(engineerData);
+        console.log(employeeArr);
+        addEmployee()
       });
   };
+
+  const createIntern = () => {
+    inquirer
+      .prompt([
+        {
+          type: "input",
+          name: "name",
+          message: "enter Engineer name",
+        },
+        {
+          type: "input",
+          name: "id",
+          message: "Enter ID number",
+        },
+        {
+          type: "input",
+          name: "email",
+          message: "enter email address",
+        },
+        {
+          type: "input",
+          name: "school",
+          message: "enter school name",
+        },
+      ])
+      .then((data) => {
+        const internData = new Engineer(
+          data.name,
+          data.id,
+          data.email,
+          data.school
+        );
+        employeeArr.push(internData);
+        console.log(employeeArr);
+        addEmployee()
+        
+  
+      });
+
+    };
+
+  
+
 
   const addEmployee = () => {
     inquirer
@@ -52,7 +135,7 @@ function master() {
         {
           type: "list",
           name: "addEmployee",
-          message: "enter managers name",
+          message: "Would you like to add a new employee",
           choices: ["Engineer", "Intern", "No"],
         },
       ])
@@ -73,6 +156,9 @@ function master() {
 
 createManager()
 
+
+
 }
 
 master();
+

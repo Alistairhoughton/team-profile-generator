@@ -1,3 +1,5 @@
+const Engineer = require("../lib/Engineer");
+
 const masterTeam = (profiles) => {
 
     teamCards = []
@@ -7,13 +9,22 @@ const masterTeam = (profiles) => {
         <div>
 
         ${manager.getName}
+        ${manager.getId}
+        ${manager.getEmail}
+        ${manager.getOfficeNumber}
+        
+       
+        <div>
+        <div>
+
+        ${Engineer.name}
         
 
 
         <div>
         <div>
 
-        ${manager.getOfficeNumber()}
+        ${Engineer.name}
         
 
 
