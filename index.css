@@ -1,15 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 h2 {
-  padding: 10px;
+  padding-left: 10px;
+  font-size: larger;
 }
 
 li {
   padding: 10px;
+  padding-top: 30px;
+  list-style: none;
+}
+
+h3 {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+span {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: crimson;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
 }
 
 .header {
@@ -18,18 +43,64 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: coral;
+  background-color: crimson;
   color: white;
 }
 
-.card {
+.card-holder {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.cardTemp {
+  margin: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+  transition: 0.15s ease-in-out;
+}
+
+.cardTemp:hover {
+  transform: translateY(-10px) scale(102%);
+}
+
+.cardHeader {
+  background-color: crimson;
+  color: white;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.cardBody {
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   height: 400px;
-  width: 200px;
-  background-color: white;
-  border: 1px solid black;
-  margin: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.cardHeaderManager {
+  background-color: seagreen;
+}
+
+.cardHeaderEngineer {
+  background-color: salmon;
+}
+
+.cardHeaderIntern {
+  background-color: dodgerblue;
 }

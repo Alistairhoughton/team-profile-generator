@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.holder {
+  width: 200px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+.background {
+  height: 90vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cardhead {
+  box-sizing: border-box;
+  background-color: coral;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardbody {
+  background-color: cornflowerblue;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+li {
+  padding: 10px;
+}

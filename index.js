@@ -7,7 +7,7 @@ const Intern = require("./lib/Intern");
 const path = require("path");
 const renderHtmlFile = require("./utils/renderHtml");
 
-const template = path.join(__dirname, "teamTemplate.html");
+const template = path.join(__dirname, "team.html");
 const employeeArr = [];
 
 function master() {
