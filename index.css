@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+/* scroll */
 
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(104, 104, 104) rgb(46, 46, 46);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  opacity: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(189, 189, 189);
+  opacity: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(145, 145, 145);
+  border-radius: 60px;
+  border: rgb(255, 255, 255);
+  opacity: 0;
+}
+
+
+/* --------------------------------------------- */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,7 +35,7 @@
 }
 
 h2 {
-  padding-left: 10px;
+  padding-left: 20px;
   font-size: larger;
 }
 
@@ -16,11 +43,18 @@ li {
   padding: 10px;
   padding-top: 30px;
   list-style: none;
+  border-bottom: solid black 1px;
+  margin-left: 18px;
+  width: 100%;
+  width: 252px;
+  font-weight: bold;
 }
 
 h3 {
   padding: 10px;
   padding-bottom: 20px;
+  padding-left: 20px;
+  font-weight: bolder;
 }
 
 span {
@@ -57,8 +91,9 @@ a:hover {
 
 .cardTemp {
   margin: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   border-radius: 10px;
   transition: 0.15s ease-in-out;
 }
@@ -81,6 +116,18 @@ a:hover {
   border-top-left-radius: 10px;
 }
 
+.cardSub {
+  background-color: rgb(69, 212, 131);
+  color: black;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+}
+
 .cardBody {
   background-color: rgb(241, 241, 241);
   display: flex;
@@ -94,7 +141,7 @@ a:hover {
 }
 
 .cardHeaderManager {
-  background-color: seagreen;
+  background-color: rgb(60, 184, 114);
 }
 
 .cardHeaderEngineer {

@@ -44,11 +44,10 @@ function master() {
         );
         employeeArr.push(managerData);
         console.log(employeeArr);
-        addEmployee()
+        addEmployee();
       });
-    };
-    
-  
+  };
+
   const createEngineer = () => {
     inquirer
       .prompt([
@@ -82,7 +81,7 @@ function master() {
         );
         employeeArr.push(engineerData);
         console.log(employeeArr);
-        addEmployee()
+        addEmployee();
       });
   };
 
@@ -119,15 +118,9 @@ function master() {
         );
         employeeArr.push(internData);
         console.log(employeeArr);
-        addEmployee()
-        
-  
+        addEmployee();
       });
-
-    };
-
-  
-
+  };
 
   const addEmployee = () => {
     inquirer
@@ -151,14 +144,10 @@ function master() {
   };
 
   const renderHtml = () => {
-    fs.writeFileSync(template, renderHtmlFile(employeeArr),'utf-8',);
- };
+    fs.writeFileSync(template, renderHtmlFile(employeeArr), "utf-8");
+  };
 
-createManager()
-
-
-
+  createManager();
 }
 
 master();
-

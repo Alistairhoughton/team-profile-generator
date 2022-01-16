@@ -11,7 +11,7 @@ const masterTeam = (profiles) => {
     <h2>Name: ${manager.name}</h2>
   </div>
   <div class="cardBody">
-    <h3>Role: ${manager.getRole()}<span></span><i class="fas fa-clipboard-list"></i></h2>
+    <h3>Role: ${manager.getRole()}<span></span><i class="fas fa-clipboard-list"></i></h3>
       <ul>
         <li>Email: ${manager.email}</li>
         <li>ID: ${manager.id}</li>
@@ -28,13 +28,13 @@ const masterTeam = (profiles) => {
           <h2>Name: ${engineer.name}</h2>
         </div>
         <div class="cardBody">
-          <h3>Role: ${engineer.getRole()}<span></span> <i class="fas fa-wrench"></i></h2>
+          <h3>Role: ${engineer.getRole()}<span></span> <i class="fas fa-wrench"></i></h3>
             <ul>
               <li>Email: ${engineer.email}</li>
               <li>ID: ${engineer.id}</li>
-              <a href="https://github.com/${engineer.github}" target="_blank"><li>Github: ${
-      engineer.github
-    }</li></a>
+              <a href="https://github.com/${
+                engineer.github
+              }" target="_blank"><li>Github: ${engineer.github}</li></a>
             </ul>
         </div>
       </article>`;
@@ -47,7 +47,7 @@ const masterTeam = (profiles) => {
       <h2>Name: ${intern.name}</h2>
     </div>
     <div class="cardBody">
-      <h3>Role: ${intern.getRole()}<span></span> <i class="fas fa-book"></i></h2>
+      <h3>Role: ${intern.getRole()}<span></span> <i class="fas fa-book"></i></h3>
         <ul>
           <li>Email: ${intern.email}</li>
           <li>ID: ${intern.id}</li>
@@ -103,9 +103,5 @@ module.exports = (profiles) => {
       </main>
       <script src="https://kit.fontawesome.com/4a305bf03e.js" crossorigin="anonymous"></script>
     </body>
-  </html>
-                    
-                    
-                    
-                    `;
+  </html>`;
 };
