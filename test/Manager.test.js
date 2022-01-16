@@ -1,7 +1,7 @@
 const { expect } = require("@jest/globals");
 const Manager = require("../lib/Manager");
 
-describe('Engineer Class', () => {
+describe('Manager Class', () => {
     describe('Initialization', () => {
         it('Should create an Manager object with an ID, Name, Email and Office Number', () => {
             const manager = new Manager('Frank', 400, "Frank@frank.com", "001")
